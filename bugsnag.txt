@@ -1,0 +1,7 @@
+Reporting handled exceptions can be accomplished as follows:
+
+try {
+    // Some potentially crashy code
+} catch (Exception $ex) {
+    Bugsnag::notifyException($ex);
+}
